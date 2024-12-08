@@ -1,0 +1,194 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Simple font for readability */
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace with your image filename */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-position: center; /* Centers the image */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow below the header */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+    letter-spacing: 2px; /* Adds a slight spacing for a cleaner look */
+}
+
+header p {
+    font-size: 1.2em;
+    line-height: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text depth */
+}
+
+header p1 {
+    font-size: 0.7em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+}
+
+/* Main Padding for all sections */
+main {
+    padding: 1em;
+}
+
+/* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    color: white;
+    padding: 1em 0;
+    font-size: 1em;
+    position: fixed; /* Fixes the footer at the bottom of the viewport */
+    bottom: 0; /* Aligns to the bottom */
+    left: 0;
+    width: 100%; /* Ensures it spans the entire width */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 45px; /* Set consistent height */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Back to Home Link Styling */
+.back-home {
+    display: inline-block;
+    background-color: #ffab00; /* Bright button color */
+    color: white;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.back-home:hover {
+    background-color: #e89e00; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Introduction Section Styling */
+.introduction {
+    background: rgba(249, 249, 249, 0.9); /* Semi-transparent background */
+    padding: 1.5em;
+    margin: 1em auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Categories Section Flexbox Layout */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+/* Polaroid Styling for QR Cards */
+.polaroid {
+    background: white;
+    padding: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+    position: relative;
+    transform: rotate(-2deg); /* Slight rotation for Polaroid effect */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    margin: 1em;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg); /* Rotate back on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.polaroid img {
+    max-width: 200px; /* Image width limited */
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Caption Styling for Polaroid */
+.polaroid .caption {
+    background: rgba(249, 249, 249, 0.9); /* Semi-transparent caption */
+    padding: 0.5em;
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #242424; /* Orange text color for captions */
+    border-top: 1px solid #ddd;
+}
+
+.polaroid .caption h3 a {
+    text-decoration: none; /* Remove underline */
+    color: #242424; /* Match the orange color */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.polaroid .caption h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #242424; /* Matching orange for the title */
+}
+
+
+.polaroid .caption h3 a:hover {
+    color: #ffab00; /* Slightly darker orange on hover */
+}
+
+/* Category Card Styling for Categories (National, International) */
+.category-card {
+    padding: 1.5em;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent card background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+    transform: scale(1.05); /* Slight scaling on hover for interactivity */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside category cards */
+.category-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category-card a:hover {
+    color: #ffab00; /* Change color on hover for links */
+}
+
+/* Polaroid Container for Layout */
+.polaroid-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+    flex-wrap: wrap; /* Ensure responsive layout */
+}
